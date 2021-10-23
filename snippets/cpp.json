@@ -1,0 +1,29 @@
+{
+  "Class": {
+    "prefix": ["class_simple"],
+    "body": [
+      "/**",
+      " * @author ${VIM:\\$USER}",
+      " */",
+	  "#ifndef ${1:CLASSNAME}_H",
+	  "#denine ${1:CLASSNAME}_H",
+	  "",
+	  "class ${2:Name}{",
+      "\tpublic:",
+      "\t${2:Name}()=default;",
+      "\t${2:Name}(const ${2:Name}&);",
+      "\t${2:Name}(${2:Name}&&)noexcept;",
+      "\t~${2:Name}()=default;",
+      "\t\t$0",
+      "\t",
+      "\t${2:Name}& operator=(const ${2:Name}&);",
+      "\t${2:Name}& operator=(${2:Name}&&) noexcept;",
+      "\tprivate:",
+      "\t",
+      "}:",
+	  "#endif // ${1:CLASSNAME}_H"
+    ],
+    "description": "Class definition template."
+  }
+}
+
